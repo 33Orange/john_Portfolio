@@ -1,0 +1,475 @@
+@import url(normilize.scss);
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
+@import url(responsive.scss);
+html {
+  min-width: 325px;
+}
+
+/* Header */
+.header-nm {
+  max-width: 1032px;
+  height: 70px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-nm .navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nm .navigation-menu .navigation-item {
+  display: inline-block;
+  margin: 0 16.5px;
+}
+
+.header-nm .navigation-menu .navigation-item .navigation-button {
+  text-decoration: none;
+  color: #000;
+  font-family: "Heebo";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+/* MAIN CONTENt */
+main {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+main .info-cont {
+  margin: 140px auto 71px;
+  max-width: 856px;
+  height: 314px;
+}
+
+main .info-cont .dw-button {
+  width: 208px;
+  height: 47px;
+  background-color: #ff6464;
+  text-align: center;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .info-cont .dw-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Heebo";
+}
+
+main .info-cont .info-flex-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .info-cont .info-flex-cont .info-text .text-main {
+  max-width: 506px;
+  font-family: "Heebo";
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #21243d;
+  margin: 18px 0 0 0;
+}
+
+main .info-cont .info-flex-cont .info-text .text-second {
+  max-width: 497px;
+  font-family: "Heebo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #21243d;
+}
+
+main .info-cont .info-flex-cont .info-foto-mobile {
+  display: none;
+}
+
+main .info-cont .info-flex-cont .info-foto {
+  margin: 0;
+  padding: 0;
+  width: 243px;
+  height: 243px;
+}
+
+main .info-cont .info-flex-cont .info-foto .foto {
+  max-width: 243px;
+  position: absolute;
+  z-index: 51;
+  border-radius: 50%;
+}
+
+main .recent-background {
+  width: 100%;
+  background-color: #edf7fa;
+}
+
+main .recent-posts-cont {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+main .recent-posts-cont .recent-head-text-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 69px;
+}
+
+main .recent-posts-cont .recent-head-text-cont h3 {
+  font-family: "Heebo";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+main .recent-posts-cont .recent-head-text-cont a {
+  color: #00a8cc;
+  font-family: "Heebo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+main .recent-posts-cont .post-cont-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .recent-posts-cont .post-cont-flex .post-cont {
+  width: 48.83178%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 270px;
+          flex: 1 1 270px;
+  height: 295px;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+          box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  margin-bottom: 32px;
+  margin: 0px 20px 32px 20px;
+  padding: 20px;
+}
+
+main .recent-posts-cont .post-cont-flex .post-cont .post-title {
+  color: #21243d;
+  font-family: "Heebo";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 10px auto 17px;
+}
+
+main .recent-posts-cont .post-cont-flex .post-cont .post-data {
+  font-family: "Heebo";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-right: 10px;
+  color: #21243d;
+}
+
+main .recent-posts-cont .post-cont-flex .post-cont .post-theme {
+  font-family: "Heebo";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 10px;
+  color: #21243d;
+}
+
+main .recent-posts-cont .post-cont-flex .post-cont .post-text {
+  max-width: 368px;
+  font-family: "Heebo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #21243d;
+}
+
+main .featured-works {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+main .featured-works .fw-cont-title {
+  font-family: "Heebo";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #21243d;
+  margin: 15px 0 0;
+}
+
+main .featured-works .fw-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 31px 0px 15px 0px;
+}
+
+main .featured-works .fw-cont .fw-text-cont {
+  margin-left: 18px;
+}
+
+main .featured-works .fw-cont .fw-text-cont .fw-title {
+  font-family: "Heebo";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #21243d;
+  margin: 0px 0px 9px;
+}
+
+main .featured-works .fw-cont .fw-text-cont p {
+  margin-top: 32px;
+}
+
+main .featured-works .fw-cont .fw-text-cont .fw-data {
+  font-family: "Heebo";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  padding: 1px 9px;
+  background-color: #142850;
+  border-radius: 16px;
+  width: 62px;
+}
+
+main .featured-works .fw-cont .fw-text-cont .fw-theme {
+  font-family: "Heebo";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8695a4;
+  margin: 26px;
+}
+
+main .featured-works .fw-cont .fw-text-cont .fw-text {
+  font-family: "Heebo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #21243d;
+  margin: 0;
+}
+
+main .featured-works .fw-cont .fw-img-cont {
+  padding-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+footer .contact-bar {
+  max-width: 856px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contact-bar .contact-item {
+  margin: 51px 17.5px 26px;
+  display: inline-block;
+  list-style-type: none;
+}
+
+footer .copyrights {
+  font-family: "Heebo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #21243d;
+  margin: 0;
+  padding: 0;
+}
+
+.info-foto-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  main .info-cont {
+    margin: 0 auto 250px;
+  }
+  main .info-cont .dw-button {
+    margin: 0 auto;
+  }
+  main .info-cont .info-foto-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  main .info-cont .info-foto-mobile .foto {
+    max-width: 180px;
+  }
+  main .info-cont .info-flex-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  main .info-cont .info-flex-cont .info-foto {
+    display: none;
+  }
+  main .info-cont .info-flex-cont .info-text .text-main {
+    font-size: 32px;
+    text-align: center;
+  }
+  main .info-cont .info-flex-cont .info-text .text-second {
+    text-align: center;
+  }
+  main .featured-works .featured-works-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+  }
+  main .featured-works .featured-works-flex .fw-cont-title {
+    text-align: center;
+  }
+  main .featured-works .featured-works-flex .fw-cont {
+    display: block;
+    margin: 0 auto;
+  }
+  main .featured-works .featured-works-flex .fw-cont .fw-img-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 15px;
+  }
+  main .featured-works .featured-works-flex .fw-cont .fw-img-cont .fw-img {
+    max-width: 340px;
+  }
+  main .featured-works .featured-works-flex .fw-cont .fw-text-cont {
+    text-align: left;
+  }
+  main .featured-works .featured-works-flex .fw-cont .fw-text-cont .fw-title {
+    text-align: left;
+    margin: 0;
+    font-size: 24px;
+  }
+  main .featured-works .featured-works-flex .fw-cont .fw-text-cont .fw-data {
+    font-size: 16px;
+  }
+  main .featured-works .featured-works-flex .fw-cont .fw-text-cont .fw-theme {
+    font-size: 16px;
+    margin: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
