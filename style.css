@@ -18,6 +18,10 @@ html {
           justify-content: flex-end;
 }
 
+.header-nm .burger-menu {
+  display: none;
+}
+
 .header-nm .navigation-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,6 +389,50 @@ footer .copyrights {
 }
 
 @media only screen and (max-width: 600px) {
+  .header-nm .navigation-menu {
+    display: none;
+  }
+  .header-nm .burger-menu-cont {
+    margin: 20px 18px;
+    display: block;
+    cursor: pointer;
+    background-image: url(./images/icons/burger.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+  .header-nm .burger-menu-cont .burger-menu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #ffffff90;
+    width: 100%;
+    height: 80px;
+  }
+  .header-nm .burger-menu-cont .burger-menu .navigation-button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-decoration: none;
+    color: #000;
+    font-family: "Heebo";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 20px;
+  }
+  .header-nm .burger-menu-cont .burger-menu .navigation-button .krest {
+    max-width: 35px;
+    height: 35px;
+  }
   main .info-cont {
     margin: 0 auto 250px;
   }
@@ -424,6 +472,7 @@ footer .copyrights {
   main .info-cont .info-flex-cont .info-text .text-main {
     font-size: 32px;
     text-align: center;
+    margin: 0;
   }
   main .info-cont .info-flex-cont .info-text .text-second {
     text-align: center;
