@@ -49,6 +49,10 @@
   text-align: right;
 }
 
+.header-nm .navigation-menu .navigation-item .active-bt {
+  color: #ff6464;
+}
+
 @media only screen and (max-width: 600px) {
   .header-nm .navigation-menu {
     display: none;

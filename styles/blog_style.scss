@@ -1,0 +1,66 @@
+/* IMPORT */
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
+@import "settings";
+@import "normilize";
+@import "header";
+@import "footer";
+
+/* min-width for old mobiles */
+
+html {
+    min-width: 325px;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1152px;
+    margin: 0 auto;
+    // FEATURED WORKS SECTION =============================================
+    .blog-cont {
+        max-width: 856px;
+        margin: 0 auto;
+        .blog-cont-title {
+            @include stfont(44px, normal, bold, 60px, 0px);
+            text-align: left;
+            color: $primary-color;
+            margin: 15px 15px;
+        }
+        .bg-item-cont {
+            margin: 31px auto;
+            @include dflex(center, center);
+            border-bottom: 1px solid #e0e0e0;
+            .bg-text-cont {
+                padding: 20px;
+                .bg-title {
+                    @include stfont(30px, normal, 500, 44px, 0px);
+                    text-align: left;
+                    color: $primary-color;
+                }
+                p {
+                    margin-top: 32px;
+                }
+                .bg-data {
+                    @include stfont(20px, normal, normal, 29px, 0px);
+                    text-align: left;
+                    color: $primary-color;
+                }
+                .bg-vector {
+                    @include stfont(20px, normal, normal, 29px, 0px);
+                    margin: 0 30px;
+                }
+                .bg-theme {
+                    @include stfont(20px, normal, 400, 29px, 0px);
+                    text-align: left;
+                    color: #8695a4;
+                }
+                .bg-text {
+                    @include stfont(16px, normal, 400, 24px, 0px);
+                    text-align: left;
+                    color: $primary-color;
+                    margin: 6px auto;
+                }
+            }
+        }
+    }
+}
