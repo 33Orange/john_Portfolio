@@ -1,0 +1,18 @@
+// VARIABLES =========================================
+$fontFamily: "Heebo";
+$primary-color: #21243d;
+
+// MIXINES ===========================================
+@mixin dflex($j, $a) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+}
+@mixin stfont($fs, $fst, $fw, $lh, $ls) {
+    font-family: $fontFamily;
+    font-size: $fs;
+    font-style: $fst;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}

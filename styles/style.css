@@ -354,6 +354,9 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .header-nm .burger-menu {
@@ -370,6 +373,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 27px;
 }
 
 .header-nm .navigation-menu .navigation-item {
@@ -475,11 +479,12 @@ footer .copyrights {
   padding: 0;
 }
 
+/* min-width for old mobiles */
 html {
   min-width: 325px;
 }
 
-/* MAIN CONTENt */
+/* MAIN CONTENT */
 main {
   max-width: 1152px;
   margin: 0 auto;
@@ -491,8 +496,12 @@ main .info-cont {
   height: 314px;
 }
 
+main .info-cont .info-foto-mobile {
+  display: none;
+}
+
 main .info-cont .dw-button {
-  width: 208px;
+  max-width: 208px;
   height: 47px;
   background-color: #ff6464;
   text-align: center;
@@ -500,12 +509,12 @@ main .info-cont .dw-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .info-cont .dw-button a {
@@ -522,14 +531,19 @@ main .info-cont .info-flex-cont {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 main .info-cont .info-flex-cont .info-text .text-main {
   max-width: 506px;
   font-family: "Heebo";
   font-size: 44px;
-  line-height: 60px;
+  font-style: normal;
   font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0;
   color: #21243d;
   margin: 18px 0 0 0;
 }
@@ -546,10 +560,6 @@ main .info-cont .info-flex-cont .info-text .text-second {
   color: #21243d;
 }
 
-main .info-cont .info-flex-cont .info-foto-mobile {
-  display: none;
-}
-
 main .info-cont .info-flex-cont .info-foto {
   margin: 0;
   padding: 0;
@@ -559,14 +569,13 @@ main .info-cont .info-flex-cont .info-foto {
 
 main .info-cont .info-flex-cont .info-foto .foto {
   max-width: 243px;
-  position: absolute;
-  z-index: 51;
   border-radius: 50%;
 }
 
 main .recent-background {
   width: 100%;
   background-color: #edf7fa;
+  margin: 0 auto;
 }
 
 main .recent-posts-cont {
@@ -595,6 +604,7 @@ main .recent-posts-cont .recent-head-text-cont h3 {
   line-height: 60px;
   letter-spacing: 0px;
   text-align: left;
+  margin-left: 20px;
 }
 
 main .recent-posts-cont .recent-head-text-cont a {
@@ -606,6 +616,7 @@ main .recent-posts-cont .recent-head-text-cont a {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: right;
+  margin-right: 20px;
 }
 
 main .recent-posts-cont .post-cont-flex {
@@ -835,12 +846,12 @@ main .featured-works .fw-cont .fw-img-cont {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 15px;
   }
   main .featured-works .featured-works-flex .fw-cont .fw-img-cont .fw-img {
@@ -861,9 +872,5 @@ main .featured-works .fw-cont .fw-img-cont {
     font-size: 16px;
     margin: 20px;
   }
-}
-
-.info-foto-mobile {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */

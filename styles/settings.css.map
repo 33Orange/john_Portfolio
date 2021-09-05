@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "adaptive.scss"
+        "settings.scss"
     ],
     "names": [],
-    "file": "adaptive.css"
+    "file": "settings.css"
 }

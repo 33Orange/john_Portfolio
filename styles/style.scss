@@ -1,16 +1,17 @@
-$fontFamily: "Heebo";
-
 /* IMPORT */
 @import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
+@import "settings";
 @import "normilize";
 @import "header";
 @import "footer";
+
+/* min-width for old mobiles */
 
 html {
     min-width: 325px;
 }
 
-/* MAIN CONTENt */
+/* MAIN CONTENT */
 
 main {
     max-width: 1152px;
@@ -20,15 +21,17 @@ main {
         margin: 140px auto 71px;
         max-width: 856px;
         height: 314px;
+        //foto for adaptive
+        .info-foto-mobile {
+            display: none;
+        }
         .dw-button {
-            width: 208px;
+            max-width: 208px;
             height: 47px;
             background-color: #ff6464;
             text-align: center;
             border-radius: 2px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include dflex(center, center);
             a {
                 text-decoration: none;
                 color: white;
@@ -37,32 +40,20 @@ main {
             }
         }
         .info-flex-cont {
-            display: flex;
-            justify-content: space-between;
+            @include dflex(space-between, flex-start);
             .info-text {
                 .text-main {
                     max-width: 506px;
-                    font-family: $fontFamily;
-                    font-size: 44px;
-                    line-height: 60px;
-                    font-weight: 700;
-                    color: #21243d;
+                    @include stfont(44px, normal, 700, 60px, 0);
+                    color: $primary-color;
                     margin: 18px 0 0 0;
                 }
                 .text-second {
                     max-width: 497px;
-                    font-family: $fontFamily;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 24px;
-                    letter-spacing: 0px;
+                    @include stfont(16px, normal, 400, 24px, 0px);
                     text-align: left;
-                    color: #21243d;
+                    color: $primary-color;
                 }
-            }
-            .info-foto-mobile {
-                display: none;
             }
             .info-foto {
                 margin: 0;
@@ -71,8 +62,6 @@ main {
                 height: 243px;
                 .foto {
                     max-width: 243px;
-                    position: absolute;
-                    z-index: 51;
                     border-radius: 50%;
                 }
             }
@@ -82,39 +71,28 @@ main {
     .recent-background {
         width: 100%;
         background-color: #edf7fa;
+        margin: 0 auto;
     }
     .recent-posts-cont {
         max-width: 856px;
         margin: 0 auto;
         .recent-head-text-cont {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include dflex(space-between, center);
             height: 69px;
             h3 {
-                font-family: $fontFamily;
-                font-size: 22px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 60px;
-                letter-spacing: 0px;
+                @include stfont(22px, normal, 400, 60px, 0px);
                 text-align: left;
+                margin-left: 20px;
             }
             a {
                 color: #00a8cc;
-                font-family: $fontFamily;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                letter-spacing: 0px;
+                @include stfont(16px, normal, 400, 24px, 0px);
                 text-align: right;
+                margin-right: 20px;
             }
         }
         .post-cont-flex {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include dflex(space-around, center);
             width: 100%;
             flex-wrap: wrap;
             .post-cont {
@@ -128,48 +106,28 @@ main {
                 margin: 0px 20px 32px 20px;
                 padding: 20px;
                 .post-title {
-                    color: #21243d;
-                    font-family: $fontFamily;
-                    font-size: 26px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 38px;
-                    letter-spacing: 0px;
+                    color: $primary-color;
+                    @include stfont(26px, normal, 700, 38px, 0px);
                     text-align: left;
                     margin: 10px auto 17px;
                 }
                 .post-data {
-                    font-family: $fontFamily;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px;
-                    letter-spacing: 0px;
+                    @include stfont(18px, normal, 400, 26px, 0px);
                     text-align: left;
                     margin-right: 10px;
-                    color: #21243d;
+                    color: $primary-color;
                 }
                 .post-theme {
-                    font-family: $fontFamily;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px;
-                    letter-spacing: 0px;
+                    @include stfont(18px, normal, 400, 26px, 0px);
                     text-align: left;
                     margin-left: 10px;
-                    color: #21243d;
+                    color: $primary-color;
                 }
                 .post-text {
                     max-width: 368px;
-                    font-family: $fontFamily;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 24px;
-                    letter-spacing: 0px;
+                    @include stfont(16px, normal, 400, 24px, 0px);
                     text-align: left;
-                    color: #21243d;
+                    color: $primary-color;
                 }
             }
         }
@@ -179,14 +137,9 @@ main {
         max-width: 856px;
         margin: 0 auto;
         .fw-cont-title {
-            font-family: $fontFamily;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 60px;
-            letter-spacing: 0px;
+            @include stfont(22px, normal, 400, 60px, 0px);
             text-align: left;
-            color: #21243d;
+            color: $primary-color;
             margin: 15px 0 0;
         }
         .fw-cont {
@@ -196,26 +149,16 @@ main {
             .fw-text-cont {
                 margin-left: 18px;
                 .fw-title {
-                    font-family: $fontFamily;
-                    font-size: 30px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 44px;
-                    letter-spacing: 0px;
+                    @include stfont(30px, normal, 700, 44px, 0px);
                     text-align: left;
-                    color: #21243d;
+                    color: $primary-color;
                     margin: 0px 0px 9px;
                 }
                 p {
                     margin-top: 32px;
                 }
                 .fw-data {
-                    font-family: $fontFamily;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 900;
-                    line-height: 60px;
-                    letter-spacing: 0px;
+                    @include stfont(18px, normal, 900, 60px, 0px);
                     text-align: left;
                     color: #ffffff;
                     padding: 1px 9px;
@@ -224,25 +167,15 @@ main {
                     width: 62px;
                 }
                 .fw-theme {
-                    font-family: $fontFamily;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 29px;
-                    letter-spacing: 0px;
+                    @include stfont(20px, normal, 400, 29px, 0px);
                     text-align: left;
                     color: #8695a4;
                     margin: 26px;
                 }
                 .fw-text {
-                    font-family: $fontFamily;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 24px;
-                    letter-spacing: 0px;
+                    @include stfont(16px, normal, 400, 24px, 0px);
                     text-align: left;
-                    color: #21243d;
+                    color: $primary-color;
                     margin: 0;
                 }
             }
@@ -263,18 +196,14 @@ main {
                 margin: 0 auto;
             }
             .info-foto-mobile {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include dflex(center, center);
                 margin: 0 auto;
                 .foto {
                     max-width: 180px;
                 }
             }
             .info-flex-cont {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include dflex(center, center);
                 margin: 0 auto;
                 .info-foto {
                     display: none;
@@ -302,9 +231,7 @@ main {
                     display: block;
                     margin: 0 auto;
                     .fw-img-cont {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include dflex(center, center);
                         margin: 0 15px;
                         .fw-img {
                             max-width: 340px;
@@ -329,7 +256,4 @@ main {
             }
         }
     }
-}
-.info-foto-mobile {
-    display: none;
 }

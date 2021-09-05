@@ -1,28 +1,24 @@
+@import "settings";
+
 /* Header */
 .header-nm {
     max-width: 1032px;
     height: 70px;
     margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
+    @include dflex(flex-end, flex-start);
     .burger-menu {
         display: none;
     }
     .navigation-menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        @include dflex(flex-end, center);
+        margin-top: 27px;
         .navigation-item {
             display: inline-block;
             margin: 0 16.5px;
             .navigation-button {
                 text-decoration: none;
                 color: #000;
-                font-family: $fontFamily;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 29px;
+                @include stfont(20px, normal, 700, 29px, 0px);
                 letter-spacing: 0px;
                 text-align: right;
             }
@@ -59,12 +55,7 @@
                     flex-wrap: wrap;
                     text-decoration: none;
                     color: #000;
-                    font-family: $fontFamily;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 29px;
-                    letter-spacing: 0px;
+                    @include stfont(20px, normal, 700, 29px, 0px);
                     text-align: center;
                     margin: 20px;
                     .krest {
