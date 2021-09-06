@@ -1,0 +1,91 @@
+/* IMPORT */
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
+@import "settings";
+@import "normilize";
+@import "header";
+@import "footer";
+
+/* min-width for old mobiles */
+
+html {
+    min-width: 325px;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1152px;
+    margin: 0 auto;
+    .workd-cont {
+        max-width: 681px;
+        margin: 0 auto;
+        .workd-title {
+            @include stfont(34px, normal, 700, 50px, 0px);
+            color: $primary-color;
+            max-width: 506px;
+        }
+        .workd-data {
+            @include stfont(18px, normal, 900, 60px, 0px);
+            text-align: left;
+            color: #ffffff;
+            padding: 1px 9px;
+            background-color: #ff7c7c;
+            border-radius: 16px;
+            width: 62px;
+        }
+        .workd-theme {
+            @include stfont(20px, normal, 400, 29px, 0px);
+            text-align: left;
+            color: $primary-color;
+            margin: 26px;
+        }
+        .workd-text {
+            @include stfont(16px, normal, 400, 23.5px, 0px);
+            color: #000;
+        }
+        .workd-image {
+            max-width: 100%;
+            margin: 23px 0px;
+        }
+        > h1 {
+            @include stfont(30px, normal, 500, 60px, 0);
+            color: $primary-color;
+            margin: 0;
+        }
+        > h2 {
+            @include stfont(24px, normal, 500, 60px, 0);
+            color: $primary-color;
+            margin: 0;
+        }
+    }
+}
+
+// ADAPTIVE MAIN SECTION ==================================================================
+
+@media only screen and (max-width: 600px) {
+    main {
+        .workd-cont {
+            padding: 0px 10px;
+            .workd-title {
+                @include stfont(30px, normal, 700, 40px, 0px);
+                color: $primary-color;
+            }
+            > h1 {
+                @include stfont(26px, normal, 500, 60px, 0);
+                color: $primary-color;
+                margin: 0;
+            }
+            > h2 {
+                @include stfont(20px, normal, 500, 60px, 0);
+                color: $primary-color;
+                margin: 0;
+            }
+            .workd-theme {
+                @include stfont(18px, normal, 400, 26px, 0px);
+                text-align: left;
+                color: $primary-color;
+                margin: 5px;
+            }
+        }
+    }
+}

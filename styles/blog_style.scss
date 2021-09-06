@@ -18,10 +18,10 @@ main {
     margin: 0 auto;
     // BLOG CONTENT SECTION =============================================
     .blog-cont {
-        max-width: 856px;
-        margin: 0 auto;
+        max-width: 682px;
+        margin: 140px auto;
         .blog-cont-title {
-            @include stfont(44px, normal, bold, 60px, 0px);
+            @include stfont(44px, normal, 900, 60px, 0px);
             text-align: left;
             color: $primary-color;
             margin: 15px 15px;
@@ -60,6 +60,17 @@ main {
                     color: $primary-color;
                     margin: 6px auto;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        .blog-cont {
+            margin: 0 auto;
+            .blog-cont-title {
+                @include stfont(30px, normal, 700, 60px, 0px);
             }
         }
     }

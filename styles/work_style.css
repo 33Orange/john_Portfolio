@@ -496,222 +496,27 @@ main {
   margin: 0 auto;
 }
 
-main .info-cont {
-  margin: 140px auto 71px;
-  max-width: 856px;
-  height: 314px;
-}
-
-main .info-cont .info-foto-mobile {
-  display: none;
-}
-
-main .info-cont .dw-button {
-  max-width: 208px;
-  height: 47px;
-  background-color: #ff6464;
-  text-align: center;
-  border-radius: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .info-cont .dw-button a {
+main a {
   text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-family: "Heebo";
-}
-
-main .info-cont .info-flex-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-main .info-cont .info-flex-cont .info-text .text-main {
-  max-width: 506px;
-  font-family: "Heebo";
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 0;
   color: #21243d;
-  margin: 18px 0 0 0;
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
 }
 
-main .info-cont .info-flex-cont .info-text .text-second {
-  max-width: 497px;
-  font-family: "Heebo";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #21243d;
-}
-
-main .info-cont .info-flex-cont .info-foto {
-  margin: 0;
-  padding: 0;
-  width: 243px;
-  height: 243px;
-}
-
-main .info-cont .info-flex-cont .info-foto .foto {
-  max-width: 243px;
-  border-radius: 50%;
-}
-
-main .recent-background {
-  width: 100%;
-  background-color: #edf7fa;
-  margin: 0 auto;
-}
-
-main .recent-posts-cont {
-  max-width: 856px;
-  margin: 0 auto;
-}
-
-main .recent-posts-cont .recent-head-text-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 69px;
-}
-
-main .recent-posts-cont .recent-head-text-cont h3 {
-  font-family: "Heebo";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin-left: 20px;
-}
-
-main .recent-posts-cont .recent-head-text-cont a {
-  color: #00a8cc;
-  font-family: "Heebo";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: right;
-  margin-right: 20px;
-}
-
-main .recent-posts-cont .post-cont-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-main .recent-posts-cont .post-cont-flex .post-cont {
-  width: 48.83178%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 270px;
-          flex: 1 1 270px;
-  height: 295px;
-  background: #fff;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
-          box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
-  margin-bottom: 32px;
-  margin: 0px 20px 32px 20px;
-  padding: 10px;
-}
-
-main .recent-posts-cont .post-cont-flex .post-cont .post-title {
-  color: #21243d;
-  font-family: "Heebo";
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin: 10px auto 17px;
-}
-
-main .recent-posts-cont .post-cont-flex .post-cont .post-data {
-  font-family: "Heebo";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin-right: 10px;
-  color: #21243d;
-}
-
-main .recent-posts-cont .post-cont-flex .post-cont .post-theme {
-  font-family: "Heebo";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin-left: 10px;
-  color: #21243d;
-}
-
-main .recent-posts-cont .post-cont-flex .post-cont .post-text {
-  max-width: 368px;
-  font-family: "Heebo";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #21243d;
+main a:hover {
+  color: #ff6464;
 }
 
 main .featured-works {
-  max-width: 856px;
-  margin: 0 auto;
+  max-width: 682px;
+  margin: 140px auto;
 }
 
 main .featured-works .fw-cont-title {
   font-family: "Heebo";
-  font-size: 22px;
+  font-size: 44px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 60px;
   letter-spacing: 0px;
   text-align: left;
@@ -790,65 +595,32 @@ main .featured-works .fw-cont .fw-img-cont {
   padding-top: 10px;
 }
 
+main .featured-works .fw-cont .fw-img-cont .fw-img {
+  max-width: 246px;
+}
+
+main .featured-works .fw-mobile-cont {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
-  main .info-cont {
-    margin: 0 auto 250px;
-  }
-  main .info-cont .dw-button {
+  main .featured-works {
     margin: 0 auto;
   }
-  main .info-cont .info-foto-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
+  main .featured-works .fw-cont-title {
+    text-align: left;
+    margin: 15px 10px;
+    font-family: "Heebo";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
   }
-  main .info-cont .info-foto-mobile .foto {
-    max-width: 180px;
-  }
-  main .info-cont .info-flex-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-  }
-  main .info-cont .info-flex-cont .info-foto {
-    display: none;
-  }
-  main .info-cont .info-flex-cont .info-text .text-main {
-    font-size: 32px;
-    text-align: center;
-    margin: 0;
-  }
-  main .info-cont .info-flex-cont .info-text .text-second {
-    text-align: center;
-  }
-  main .featured-works .featured-works-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: auto;
-  }
-  main .featured-works .featured-works-flex .fw-cont-title {
-    text-align: center;
+  main .featured-works .featured-works-flex .fw-mobile-cont {
+    display: block;
   }
   main .featured-works .featured-works-flex .fw-cont {
-    display: block;
-    margin: 0 auto;
-  }
-  main .featured-works .featured-works-flex .fw-cont .fw-img-cont {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -858,13 +630,23 @@ main .featured-works .fw-cont .fw-img-cont {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  main .featured-works .featured-works-flex .fw-cont .fw-img-cont {
+    max-width: 339px;
+    max-height: 230px;
+    padding: 0;
+    margin: 0 auto;
   }
   main .featured-works .featured-works-flex .fw-cont .fw-img-cont .fw-img {
-    max-width: 340px;
+    max-width: 100%;
   }
   main .featured-works .featured-works-flex .fw-cont .fw-text-cont {
     text-align: left;
+    margin: 10px 0px;
   }
   main .featured-works .featured-works-flex .fw-cont .fw-text-cont .fw-title {
     text-align: left;
@@ -878,17 +660,8 @@ main .featured-works .fw-cont .fw-img-cont {
     font-size: 16px;
     margin: 20px;
   }
-  .post-text {
-    max-width: 368px;
-    font-family: "Heebo";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #21243d;
-    margin: 5px;
+  main .featured-works .featured-works-flex .mob-invisible {
+    display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=work_style.css.map */

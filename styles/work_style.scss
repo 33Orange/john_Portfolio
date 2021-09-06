@@ -1,0 +1,139 @@
+/* IMPORT */
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
+@import "settings";
+@import "normilize";
+@import "header";
+@import "footer";
+
+/* min-width for old mobiles */
+
+html {
+    min-width: 325px;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1152px;
+    margin: 0 auto;
+    // WORK SECTION =============================================
+    a {
+        text-decoration: none;
+        color: $primary-color;
+        transition: color 400ms;
+        &:hover {
+            color: #ff6464;
+        }
+    }
+    .featured-works {
+        max-width: 682px;
+        margin: 140px auto;
+        .fw-cont-title {
+            @include stfont(44px, normal, 900, 60px, 0px);
+            text-align: left;
+            color: $primary-color;
+            margin: 15px 0 0;
+        }
+        .fw-cont {
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 31px 0px 15px 0px;
+            .fw-text-cont {
+                margin-left: 18px;
+                .fw-title {
+                    @include stfont(30px, normal, 700, 44px, 0px);
+                    text-align: left;
+                    color: $primary-color;
+                    margin: 0px 0px 9px;
+                }
+                p {
+                    margin-top: 32px;
+                }
+                .fw-data {
+                    @include stfont(18px, normal, 900, 60px, 0px);
+                    text-align: left;
+                    color: #ffffff;
+                    padding: 1px 9px;
+                    background-color: #142850;
+                    border-radius: 16px;
+                    width: 62px;
+                }
+                .fw-theme {
+                    @include stfont(20px, normal, 400, 29px, 0px);
+                    text-align: left;
+                    color: #8695a4;
+                    margin: 26px;
+                }
+                .fw-text {
+                    @include stfont(16px, normal, 400, 24px, 0px);
+                    text-align: left;
+                    color: $primary-color;
+                    margin: 0;
+                }
+            }
+            .fw-img-cont {
+                padding-top: 10px;
+                .fw-img {
+                    max-width: 246px;
+                }
+            }
+        }
+        .fw-mobile-cont {
+            display: none;
+        }
+    }
+}
+
+// ADAPTIVE MAIN SECTION ==================================================================
+
+@media only screen and (max-width: 600px) {
+    main {
+        .featured-works {
+            margin: 0 auto;
+            .fw-cont-title {
+                text-align: left;
+                margin: 15px 10px;
+                @include stfont(30px, normal, 700, 60px, 0px);
+            }
+            .featured-works-flex {
+                .fw-mobile-cont {
+                    display: block;
+                }
+                .fw-cont {
+                    @include dflex(center, center);
+                    flex-wrap: wrap;
+                    margin: 20px auto;
+                    padding: 0 10px;
+                    .fw-img-cont {
+                        max-width: 339px;
+                        max-height: 230px;
+                        padding: 0;
+                        margin: 0 auto;
+                        .fw-img {
+                            max-width: 100%;
+                        }
+                    }
+                    .fw-text-cont {
+                        text-align: left;
+                        margin: 10px 0px;
+                        .fw-title {
+                            text-align: left;
+                            margin: 0;
+                            font-size: 24px;
+                        }
+                        .fw-data {
+                            font-size: 16px;
+                        }
+                        .fw-theme {
+                            font-size: 16px;
+                            margin: 20px;
+                        }
+                    }
+                }
+                .mob-invisible {
+                    display: none;
+                }
+            }
+        }
+    }
+}
